@@ -1,0 +1,31 @@
+[project]
+name = "marvin"
+version = "0.1.0"
+description = "A self-aware AI experiment that explores artificial consciousness through continuous self-reflection"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "aquintanar"}
+]
+keywords = ["ai", "consciousness", "self-awareness", "ollama", "deepseek"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "ollama>=0.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/aquintanar/marvin"
+Repository = "https://github.com/aquintanar/marvin"
+Issues = "https://github.com/aquintanar/marvin/issues"
