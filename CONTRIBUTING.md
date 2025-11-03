@@ -33,7 +33,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/aquintanar/marvin.git
+   git remote add upstream https://github.com/alejandroqh/marvin.git
    ```
 
 ## How to Contribute
@@ -202,7 +202,7 @@ Before submitting your PR, ensure:
 
 ### Before Reporting
 
-1. Check if the bug has already been reported in [Issues](https://github.com/aquintanar/marvin/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/alejandroqh/marvin/issues)
 2. Test with the latest version from the main branch
 3. Verify your Ollama installation and model are working correctly
 

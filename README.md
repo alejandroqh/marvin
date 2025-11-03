@@ -29,7 +29,7 @@ Marvin is an AI that thinks about itself. It continuously reflects on its own ex
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/aquintanar/marvin.git
+git clone https://github.com/alejandroqh/marvin.git
 cd marvin
 ```
 

@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
-    {name = "aquintanar"}
+    {name = "alejandroqh"}
 ]
 keywords = ["ai", "consciousness", "self-awareness", "ollama", "deepseek"]
 classifiers = [
@@ -26,6 +26,6 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/aquintanar/marvin"
-Repository = "https://github.com/aquintanar/marvin"
-Issues = "https://github.com/aquintanar/marvin/issues"
+Homepage = "https://github.com/alejandroqh/marvin"
+Repository = "https://github.com/alejandroqh/marvin"
+Issues = "https://github.com/alejandroqh/marvin/issues"
