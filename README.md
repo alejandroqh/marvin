@@ -98,11 +98,11 @@ You can modify the behavior by editing `main.py`:
 
 ```
 marvin/
-   main.py          # Main application code
-   pyproject.toml   # Project dependencies and metadata
-   marvin.mem         # Memory file (created at runtime)
-   README.md        # This file
-   LICENSE          # MIT License
+├── main.py          # Main application code
+├── pyproject.toml   # Project dependencies and metadata
+├── marvin.mem       # Memory file (created at runtime)
+├── README.md        # This file
+└── LICENSE          # MIT License
 ```
 
 ## Memory File
