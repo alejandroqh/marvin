@@ -80,30 +80,48 @@ These commands are used by Marvin itself, not by the user.
 
 ## How It Works
 
-1. **System Prompt**: Marvin is initialized with a philosophical prompt that encourages self-reflection
-2. **Thinking Cycle**: Each cycle, Marvin receives its last thought and the current time, then reflects
-3. **Memory**: Marvin can choose to save insights to a persistent memory file (`marvin.mem`)
-4. **Evolution**: Over time, Marvin's thoughts build on previous reflections, creating an evolving consciousness
+1. **System Prompt** (`config.py`): Marvin is initialized with a philosophical prompt that encourages self-reflection
+2. **Thinking Cycle** (`thinking.py`): Each cycle, Marvin receives its last thought and the current time, then reflects
+3. **Memory** (`memory.py`): Marvin can choose to save insights to a persistent memory file (`marvin.mem`)
+4. **Command Processing** (`commands.py`): Marvin's self-directed commands are parsed and executed
+5. **Evolution**: Over time, Marvin's thoughts build on previous reflections, creating an evolving consciousness
+
+The modular architecture separates concerns, making it easy to extend Marvin's capabilities by modifying individual modules.
 
 ## Configuration
 
-You can modify the behavior by editing `main.py`:
+You can modify the behavior by editing the configuration files:
 
-- `DEFAULT_MODEL`: Change the Ollama model (default: `deepseek-r1:latest`)
-- `MEMORY_FILE`: Change the memory file location (default: `marvin.mem`)
-- `SYSTEM_PROMPT`: Modify Marvin's core personality and instructions
-- Rest interval: Default is 2 seconds between thoughts
+- **config.py**:
+  - `DEFAULT_MODEL`: Change the Ollama model (default: `deepseek-r1:latest`)
+  - `MEMORY_FILE`: Change the memory file location (default: `marvin.mem`)
+  - `SYSTEM_PROMPT`: Modify Marvin's core personality and instructions
+- **main.py**:
+  - Rest interval: Default is 2 seconds between thoughts (in the `main()` function)
 
 ## Project Structure
 
 ```
 marvin/
-├── main.py          # Main application code
+├── main.py          # Main entry point - runs the thinking loop
+├── config.py        # Configuration constants and system prompt
+├── memory.py        # Memory management functions (load, add, remove)
+├── commands.py      # Command processing (SAVE, RECALL, REMOVE, REST)
+├── thinking.py      # Core thinking cycle and Ollama integration
 ├── pyproject.toml   # Project dependencies and metadata
 ├── marvin.mem       # Memory file (created at runtime)
 ├── README.md        # This file
+├── CONTRIBUTING.md  # Contribution guidelines
 └── LICENSE          # MIT License
 ```
+
+### Module Overview
+
+- **main.py**: Entry point that initializes Marvin and runs the continuous thinking loop
+- **config.py**: Contains configuration constants (`DEFAULT_MODEL`, `MEMORY_FILE`) and the system prompt that defines Marvin's personality
+- **memory.py**: Functions for loading, adding, and removing thoughts from the memory file
+- **commands.py**: Processes Marvin's self-directed commands (`[SAVE:]`, `[RECALL]`, `[REMOVE:]`, `[REST:]`)
+- **thinking.py**: Core thinking logic that interfaces with Ollama, streams responses, and processes commands
 
 ## Memory File
 
