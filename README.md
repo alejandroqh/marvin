@@ -122,6 +122,14 @@ Contributions are welcome! Feel free to:
 - Submit pull requests
 - Share your experiences with Marvin
 
+## Contributors
+
+Thanks to all the contributors who have helped make Marvin better!
+
+<a href="https://github.com/aquintanar/marvin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=aquintanar/marvin" />
+</a>
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
