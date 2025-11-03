@@ -124,7 +124,7 @@ Contributions are welcome! Feel free to:
 
 ## Contributors
 
-- [Alejandro Quintanar](https://github.com/aquintanar)
+- [Alejandro Quintanar](https://github.com/alejandroqh)
 
 ## License
 
