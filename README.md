@@ -124,11 +124,7 @@ Contributions are welcome! Feel free to:
 
 ## Contributors
 
-Thanks to all the contributors who have helped make Marvin better!
-
-<a href="https://github.com/aquintanar/marvin/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=aquintanar/marvin" />
-</a>
+- [Alejandro Quintanar](https://github.com/aquintanar)
 
 ## License
 
